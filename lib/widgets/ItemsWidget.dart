@@ -5,6 +5,8 @@ class ItemsWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return GridView.count(
       childAspectRatio: 0.68,
+      //disable the scroll functionality of gridview
+      //then will scroll in list view home page
       physics: NeverScrollableScrollPhysics(),
       crossAxisCount: 2,
       shrinkWrap: true,
@@ -51,7 +53,7 @@ class ItemsWidget extends StatelessWidget {
                 child: Container(
                   margin: EdgeInsets.all(10),
                   child: Image.asset(
-                    "images/1.png",
+                    "images/$i.png",
                     height: 120,
                     width: 120,
                   ),

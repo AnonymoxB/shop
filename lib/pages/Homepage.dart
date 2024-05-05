@@ -1,3 +1,4 @@
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:shop/widgets/HomeAppBar.dart';
 import 'package:shop/widgets/CategoriesWidget.dart';
@@ -89,6 +90,29 @@ class Homepage extends StatelessWidget {
                 ItemsWidget(),
               ],
             ),
+          ),
+        ],
+      ),
+      bottomNavigationBar: CurvedNavigationBar(
+        backgroundColor: Colors.transparent,
+        // onTap: (index) {},
+        height: 70,
+        color: Color.fromARGB(255, 34, 104, 235),
+        items: [
+          Icon(
+            Icons.home,
+            size: 30,
+            color: Colors.white,
+          ),
+          Icon(
+            Icons.home,
+            size: 30,
+            color: Colors.white,
+          ),
+          Icon(
+            Icons.home,
+            size: 30,
+            color: Colors.white,
           ),
         ],
       ),
